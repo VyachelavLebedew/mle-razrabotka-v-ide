@@ -30,7 +30,7 @@ class DataFrameReporter:
         print('Количество пропусков:', df.isna().sum().sum())
 
         # выведите долю пропусков во всем датафрейме одним числом с плавающей
-        #  точкой в формате float_format
+        #  точкой в формате float_format - Step 3
         print(
             'Доля пропусков:',
             format(df.isna().mean(axis=None), self.float_format)
